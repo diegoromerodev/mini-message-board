@@ -1,0 +1,103 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box; }
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: fedfd4;
+  color: #fafafa; }
+
+a {
+  color: #00b7ff;
+  text-decoration: none; }
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; }
+  .home a {
+    color: #fafafa;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #ef3c2d;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(51, 51, 51, 0.4);
+    font-weight: bold; }
+    .home a:hover {
+      background-color: #d92010; }
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+h1 {
+  text-align: center;
+  color: #033270;
+  font-size: 3em;
+  font-weight: 200;
+  letter-spacing: -2px; }
+
+.message-box {
+  width: 100%;
+  flex: 1 0;
+  border: 1px solid #033270;
+  max-width: 900px;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #1368aa;
+  box-shadow: 0px 5px 10px rgba(51, 51, 51, 0.4);
+  transition: all 0.4s ease;
+  cursor: pointer; }
+  .message-box div {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4091c9; }
+  .message-box small {
+    display: inline-block;
+    background-color: #9dcee2;
+    padding: 5px;
+    border-radius: 10px; }
+  .message-box > * {
+    padding: 15px; }
+  .message-box:hover {
+    box-shadow: 0px 8px 15px rgba(51, 51, 51, 0.5); }
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto; }
+  form > * {
+    width: 100%;
+    flex: 1 0;
+    border: 1px solid #4091c9;
+    padding: 10px;
+    margin: 10px 0;
+    transition: all 0.4s ease;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(51, 51, 51, 0.2); }
+  form input:hover {
+    background-color: #9dcee2; }
+  form button {
+    border-radius: 2em;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #fafafa;
+    background-color: #4091c9;
+    width: unset;
+    padding: 15px 40px; }
+    form button:hover {
+      background-color: #1368aa; }
+
+/*# sourceMappingURL=style.css.map */

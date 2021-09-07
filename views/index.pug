@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  header(class="home")
+    h1= title
+    a(href="/new") NEW
+  ul
+    each message in messages 
+        li(class="message-box")
+            div
+                h3= message.user
+                small= message.added
+            p= message.text
